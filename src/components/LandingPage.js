@@ -377,22 +377,7 @@ const LandingPage = () => {
       {/* <AttentionHeatmap/> */}
       <Chatbot/>
             
-      {/* Scroll-to-top button */}
-      <motion.button
-        className="fixed bottom-8 right-8 bg-gradient-to-r from-cyan-400 to-violet-500 p-3 rounded-full shadow-lg z-50"
-        initial={{ opacity: 0 }}
-        animate={{ 
-          opacity: scrollPosition > 300 ? 1 : 0,
-          scale: scrollPosition > 300 ? 1 : 0.8,
-        }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-        </svg>
-      </motion.button>
+      
       
       {/* Parallax effect for background elements */}
       <motion.div
