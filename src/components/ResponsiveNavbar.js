@@ -58,27 +58,8 @@ const ResponsiveNavbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        <div className="md:hidden flex justify-between items-center">
-          <button onClick={toggleMenu} className="text-white">
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-14 left-0 w-full bg-black/90 backdrop-blur-md p-4">
-            {navItems.map((item, index) => (
-              <button
-                key={index}
-                className="block w-full text-left text-white text-lg py-2"
-                onClick={() => scrollToSection(item.id)}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        )}
+    
+        
       </div>
     </nav>
   );
