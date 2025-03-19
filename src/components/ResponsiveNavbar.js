@@ -10,12 +10,13 @@ const ResponsiveNavbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const navItems = [
+
+    { label: "Success", id: "success" },
     { label: "About Us", id: "about-us" },
     { label: "Services", id: "services" },
     { label: "How-it-works", id: "how-it-works" },
-    { label: "Success", id: "success" },
-    { label: "FAQs", id: "faqs" },
     { label: "Contact", id: "contact-us", hasIcon: true },
+    { label: "FAQs", id: "faqs" },
   ];
 
   useEffect(() => {
