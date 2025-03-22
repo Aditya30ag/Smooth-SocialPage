@@ -182,6 +182,7 @@ const IntroAnimation = () => {
           
           <div className="absolute top-10 right-8 z-50">
           <div className="text-center">
+            <a href='http://login.hirecentive.com'>
               <button className="group relative px-6 py-3 rounded-lg text-sm font-bold transition-all duration-300 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-violet-500 to-amber-400 rounded-lg opacity-75"></div>
                 <div className="absolute inset-0.5 bg-black rounded-lg"></div>
@@ -190,6 +191,7 @@ const IntroAnimation = () => {
                   
                 </span>
               </button>
+              </a>
             </div>
           </div>
 
