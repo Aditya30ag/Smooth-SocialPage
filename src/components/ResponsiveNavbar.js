@@ -87,7 +87,7 @@ const ResponsiveNavbar = () => {
                   <button
                     key={index}
                     ref={(el) => (navRefs.current[item.id] = el)}
-                    className={`relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors ${
+                    className={`relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors text-nowrap ${
                       isActive
                         ? "text-white"
                         : "text-slate-300 hover:text-white"
